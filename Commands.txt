@@ -1,0 +1,20 @@
+Write Features in feature file(.feature)
+
+on terminal
+>behave Feature
+(Feature folder name)
+->>it will generate steps for Scenario
+Copy steps and add to steps file(StepDefinition.py)
+Add 'from behave import *'
+
+Now Execute features on terminal
+>behave Features
+
+To generate XML reports
+(First add allure.bat file path in the environment variable)
+Open terminal
+>behave -f allure_behave.formatter:AllureFormatter -o C:\Users\shara\PycharmProjects\BDDAutomation
+
+To generate Allure report
+go to command prompt
+>allure server C:\Users\shara\PycharmProjects\BDDAutomation
